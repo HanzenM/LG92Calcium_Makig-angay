@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function replaceImage() {
+          document.getElementById("image").src = "images/correct.png";
+        }
+      
+        function revertImage() {
+          document.getElementById("image").src = "images/wrong.png";
+        }
+    </script>
+</head>
+<body>
+    <button onclick="replaceImage()">Looksmaxxing</button>
+    <button onclick="revertImage()">Improper Method</button>
+    <br><br>
+    <img id="image" src="images/wrong.png" style="width:300px;height:auto;">
+</body>
+</html>
